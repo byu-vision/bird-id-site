@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
    <head>
       <meta charset="utf-8" />
       <script>
@@ -22,13 +21,15 @@
             }
 
             return "unknown";
-         }</script>
+         }
+      </script>
 
       <script>
          function DetectAndServe() {
             let os = getMobileOperatingSystem();
             if (os == "Android") {
-               window.location.href = "http://www.android.com";
+               window.location.href =
+                  "https://play.google.com/store/apps/details?id=edu.byu.hbllbirdexhibit";
             } else if (os == "iOS") {
                window.location.href = "http://www.apple.com";
             } else if (os == "Windows Phone") {
@@ -40,7 +41,5 @@
       </script>
    </head>
 
-   <body onload="DetectAndServe()">
-   </body>
-
+   <body onload="DetectAndServe()"></body>
 </html>
